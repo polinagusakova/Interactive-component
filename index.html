@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+    <link rel="icon" type="image/png" sizes="32x32" href="./resources/images/favicon-32x32.png">
+    
+    <link rel="stylesheet" href="./resources/style.css">
+    <link rel="stylesheet" href="./resources/reset.css">
+
+    <!--Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <title>Frontend Mentor | Interactive rating component</title>
+    
+</head>
+<body>
+    <main>
+    <!-- Rating state start -->
+    <div class="container" id="container">
+        <div class="star_icon">
+            <img src="./resources/images/icon-star.svg" alt="Star in component main">
+        </div>
+        <h1>How did we do?</h1>
+
+        <p>Please let us know how we did with your support request. All feedback is appreciated 
+            to help us improve our offering!</p>
+
+        <form class="ratings" id="ratings">
+            <div class="star" id="one">1</div>
+            <div class="star" id="two">2</div>
+            <div class="star" id="three">3</div>
+            <div class="star" id="four">4</div>
+            <div class="star" id="five">5</div>
+        </form>
+
+        <button class="submit" id="submit" form="ratings">SUBMIT</button>
+        <p id="alert" style="display: none;">You should choose only one rate!</p>
+    </div>
+
+    <div class="thank" id="thank" style="display: none;">
+        <img class="image_thank_you" src="./resources/images/illustration-thank-you.svg" alt="Illustration thank you in thank you page">
+        
+        <p class="total">You selected <span id="total"></span> out of 5</p>
+        
+        <h2>Thank you!</h2>
+
+        <p class="appreciation">We appreciate you taking the time to give a rating. If you ever need more support, 
+            don’t hesitate to get in touch!</p>
+    </div>
+    
+    </main>
+    <footer class="attribution">
+        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+        Coded by <a href="#">Polina</a>.
+    </footer>
+    <script src="./resources/script.js"></script>
+</body>
+</html>

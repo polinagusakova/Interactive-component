@@ -1,0 +1,147 @@
+/* Main colors*/
+:root {
+    --main-background: hsl(0, 100%, 0%);
+    --main-color-white: hsl(0, 0%, 100%); 
+    --dark-blue-color: hsl(209, 27%, 15%);
+    --dark-blue-color-lighten: hsl(213, 19%, 18%);
+    --very-dark-blue-color: hsl(216, 12%, 8%);
+    --light-grey-color: hsl(217, 12%, 63%);
+    --orange: hsl(25, 97%, 53%);
+    --orange-light: hsla(25, 97%, 53%, 0.6)
+}
+
+body {
+    font-family: "Overpass", sans-serif;
+    font-weight: 400;
+    background-color: var(--very-dark-blue-color);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100svh;
+    gap: 2rem;
+    padding: 1rem;
+}
+
+/* Main box */
+.container {
+    background-color: var(--dark-blue-color);
+    max-width: 20rem;
+    border-radius: 20px;
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+/* Box for image */
+.star_icon {
+    background-color: var(--dark-blue-color-lighten);
+    border-radius: 50px;
+    height: 2rem;
+    width: 2rem;
+    /*center image in div*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+img {
+    width: 0.8rem;
+}
+
+/* Box for ratings*/
+.ratings {
+    display: flex;
+    gap: 1rem;
+    justify-content: space-evenly;
+}
+
+/* Adjust rates*/
+.star {
+    background-color: var(--dark-blue-color-lighten);
+    border-radius: 50px;
+    height: 2rem;
+    width: 2rem;
+    /*center image in div*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 700;
+    color: var(--light-grey-color);
+    font-size: 0.8rem;
+}
+
+/* Box for thanks */
+#thank {
+    background-color: var(--dark-blue-color);
+    max-width: 20rem;
+    border-radius: 20px;
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.image_thank_you {
+    width: 50%;
+}
+
+/* Adjust user result*/
+.total {
+    background-color: var(--dark-blue-color-lighten);
+    border-radius: 10px;
+    padding: 0.3rem 0.7rem;
+    color: var(--orange-light);
+}
+
+.appreciation {
+    text-align: center;
+}
+
+/*Adjust items*/
+
+h1 {
+    color: var(--main-color-white);
+    font-size: 1.5rem;
+}
+
+h2 {
+    color: var(--main-color-white);
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+p {
+    color: var(--light-grey-color);
+    font-size: 0.8rem;
+}
+
+/* Button */
+.submit {
+    border-radius: 20px;
+    background-color: var(--orange);
+    padding: 0.4rem;
+    font-size: 0.7rem;
+    font-weight: 700;
+    letter-spacing: 0.1rem;
+    border: none;
+}
+
+.submit:hover, .star:hover {
+    cursor: pointer;
+    background-color: var(--main-color-white);
+}
+
+/* Alert for user*/
+#alert {
+    align-self: center;
+    color: var(--orange);
+}
+
+/* Footer */
+.attribution { font-size: 11px; text-align: center; color: var(--main-color-white);}
+.attribution a { color: hsl(228, 45%, 44%); }
